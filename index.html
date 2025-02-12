@@ -1,0 +1,136 @@
+<html>
+    <head>
+        <title>Modern house</title>
+    </head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif; /* Corrected font family */
+        }
+        section{
+            width: 100%;
+            height: 100vh;
+            background-image:url('./bck.jpg'); /* Fixed gradient syntax */
+            background-size: cover;
+            background-position: center;
+        }
+        /* .navbar{ 
+            width: 85%;
+            margin: auto;
+            padding: 35px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        } */
+        .logo{
+            width: 120px;
+            cursor: pointer;
+
+        }
+        nav {
+      height: 90px;
+      line-height: 90px;
+      padding: 0px 60px;
+    }
+        ul {
+      float: right;
+    }
+    ul li {
+      list-style: none;
+      display: inline-block;
+      position: relative;
+
+    }
+        nav ul li a{
+      text-decoration: none;
+      color: black;
+      font-size: 18px;
+      padding: 8px 12px;
+      margin: 0px 2px;
+      transition: 0.6s ease;
+        }
+        nav ul li a:hover{
+            text-decoration: underline;
+        }
+        .content{
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            text-align: center;
+            color:black;
+
+        }
+        h1{
+            font-size: 40px;
+            margin-top: 80px;
+            position: relative;
+            margin-left: 450px;
+            margin-top:220px;
+            color: white;
+        }
+        button{
+            width: 200px;
+            padding: 15px 0;
+            text-align: center;
+            margin:20px 10px;
+            border-radius: 25px;
+            font-weight: bold;
+            border: 2px solid transparent;
+            color:brown;
+            cursor:pointer;
+            position: relative;
+        }
+        #btn1{
+            position: relative;
+            margin-left: 450px;
+            margin-bottom:600px;
+        }
+        span{
+            background: #009688;
+            height: 100%;
+            width: 100%;
+            border-radius: 25px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+            transition: 0.5s;
+
+        }
+/* button :hover span{
+    width: 100%
+
+}
+    button :hover{
+        border:none;
+    } */
+    
+    </style>
+    <body>
+        <section>
+        <div class="banner">
+            <nav>
+                <img src="logo.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Bedroom</a></li>
+                    <li><a href="#">Dining</a></li>
+                    <li><a href="#">Kitchen</a></li>
+                    <li><a href="#">Backyard</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="'content">
+            <h1>DESIGN YOUR HOUSE</h1>
+        </div>
+        <div>
+            <button type ="button" id="btn1"><span></span>WATCH MORE</button>
+            <button type ="button" id="btn2"><span></span>SUBSCRIBE</button>
+
+        </div>
+    </section>
+    </body>
+</html>
